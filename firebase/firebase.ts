@@ -1,10 +1,11 @@
 import { initializeApp, cert, getApps } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
 
-const firebasePrivateKey = process.env.FIREBASE_PRIVATE_KEY?.replace(
-  /\\n/g,
-  "\n"
-);
+const firebasePrivateKey = process.env.FIREBASE_PRIVATE_KEY;
+// ?.replace(
+//   /\\n/g,
+//   "\n"
+// );
 
 try {
   if (!getApps().length) {
