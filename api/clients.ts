@@ -14,7 +14,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return res.status(200).json(clients);
     } catch (error) {
       console.error("GET /clients error:", error);
-      return res.status(500).json({ error: "Failed to fetch clients" });
+      return res
+        .status(500)
+        .json({ error: "Failed to fetch clients", reason: { error } });
     }
   }
 
