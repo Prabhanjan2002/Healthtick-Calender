@@ -3,7 +3,6 @@
     "target": "ES2020",
     "module": "commonjs",
     "esModuleInterop": true,
-    "outDir": "dist",
     "strict": true,
     "resolveJsonModule": true,
     "moduleResolution": "node",
@@ -11,6 +10,6 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true
   },
-  "include": ["api/**/*", "firebase/**/*", "types/**/*"],
+  "include": ["api", "firebase", "types"],
   "exclude": ["node_modules", "dist"]
 }
